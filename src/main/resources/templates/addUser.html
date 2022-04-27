@@ -32,14 +32,14 @@
             <label>
                 <select size="3" multiple="multiple" name="roles" id="roles">
                     <option disabled>Roles:</option>
-                    <option value="ROLE_ADMIN">ADMIN</option>
-                    <option selected value="ROLE_USER">USER</option>
+                    <option value="admin">admin</option>
+                    <option selected value="user">user</option>
                 </select>
             </label>
             </p>
         </fieldset>
         <br/>
-        <button style="background: lightgray" type="submit">Save user</button>
+        <button type="submit">Save user</button>
     </form>
     <br/>
     <form th:action="@{/admin}">
