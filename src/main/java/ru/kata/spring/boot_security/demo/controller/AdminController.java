@@ -57,7 +57,7 @@ public class AdminController {
         return "editUser";
     }
 
-    @PatchMapping("users/{id}/edit")
+    @PostMapping("users/{id}/edit")
     public String update(@ModelAttribute("user") User user
             , @RequestParam(value = "roles") String[] roles) {
         user.setRoles(roleService.getSetOfRoles(roles));
